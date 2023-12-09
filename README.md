@@ -28,11 +28,11 @@ print(apple.dimentions_.units_)
 ```
 
 The output would show:
-
+```python
 red
 5
 ['g', 'cm']
-
+```
 
 Or a more complete example:
 
@@ -83,6 +83,7 @@ print("Squirtle Evolutions:", pokedex.Pokemons_.Squirtle_.evolutions_)
 
 With its output being:
 
+```python
 Total Pokémon in Pokedex: 2
 Pokedex Region: Kanto
 
@@ -94,7 +95,7 @@ Squirtle Type: Water
 Squirtle Abilities: ['Torrent', 'Rain Dish']
 Squirtle Defense: 65
 Squirtle Evolutions: ['Wartortle', 'Blastoise']
-
+```
 
 ## Features
 
