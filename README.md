@@ -28,7 +28,7 @@ print(apple.dimentions_.units_)
 ```
 
 The output would show:
-```less
+```markdown
 red
 5
 ['g', 'cm']
@@ -83,7 +83,7 @@ print("Squirtle Evolutions:", pokedex.Pokemons_.Squirtle_.evolutions_)
 
 With its output being:
 
-```less
+```markdown
 Total Pokémon in Pokedex: 2
 Pokedex Region: Kanto
 
