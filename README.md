@@ -18,20 +18,20 @@ To use Dictoat, simply import the `Dictoat` class in your Python project and pas
 from dictoat import Dictoat
 
 # Example of using Dictoat
-apple_dict = {"color": "red", "dimentions": {"weigh": 185, "radius": 5, "units": ["g", "cm"]}}
+apple_dict = {"flavor": "sweet", "colors": ["red", "green"],"dimentions": {"weigh": 185, "radius": 5}}
 apple = Dictoat(apple_dict)
 
 # Accessing the data
-print(apple.color_)
+print(apple.flavor_)
 print(apple.dimentions_.radius_)
-print(apple.dimentions_.units_)
+print(apple.colors_)
 ```
 
 The output would show:
 ```markdown
-red
+sweet
 5
-['g', 'cm']
+["red", "green"]
 ```
 
 Or a more complete example:
