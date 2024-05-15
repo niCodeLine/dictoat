@@ -9,7 +9,12 @@ You can easily install `Dictoat` using pip:
 ```bash
 pip install dictoat
 ```
+or via git:
 
+```bash
+git clone https://github.com/niCodeLine/dictoat.git
+```
+or just copy-paste it in your code.
 ## Usage
 
 To use Dictoat, simply import the `Dictoat` class in your Python project and pass a dictionary as an argument. For example:

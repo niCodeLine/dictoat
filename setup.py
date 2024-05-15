@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dictoat',
-    version='0.1',
+    version='1.0.1',
     packages=find_packages(),
     description='Convert a dict into an object to access items faster.',
     long_description=open('README.md').read(),
