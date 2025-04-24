@@ -4,6 +4,8 @@ class Dictoat:
         Converts a dictionary to an object.
 
         :param dictt: The Dictonary to be converted to an object.
+        :type dictt: dict
+
         :return: Object that can be called as any other.
         """
         for item in dictt:
