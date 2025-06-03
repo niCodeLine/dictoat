@@ -1,15 +1,22 @@
 class Dictoat:
-    def __init__(self,dictt: dict = {}) -> object:
-        """
-        Converts a dictionary to an object.
+    def __init__(self, dictt: dict = None, *, safety: bool = True, symbol: str = '_'):
+        '''
+        convert your dicts to objects for easier access
+        
+        :param dictt: dictionary
+        :param safety: adds a symbols (default "_") to the name to avoid matching reserved keywords
+        :param symbol: symbol to be added as safety procedure
 
-        :param dictt: The Dictonary to be converted to an object.
         :type dictt: dict
-
-        :return: Object that can be called as any other.
-        """
-        for item in dictt:
-            if type(dictt[item]) is dict:
-                setattr(self, str(item)+'_', Dictoat(dictt[item])) # the undersquare avoids coinciding with reserved keywords
+        :type safety: bool
+        :type symbol: str
+        
+        '''
+        if dictt is None:
+            dictt = {}
+        for key, val in dictt.items():
+            attr_name = f"{key}{symbol}" if safety else str(key) # the undersquare avoids coinciding with reserved keywords
+            if isinstance(val, dict):
+                setattr(self, attr_name, Dictoat(val, safety=safety))
             else:
-                setattr(self, str(item)+'_', dictt[item])
+                setattr(self, attr_name, val)
